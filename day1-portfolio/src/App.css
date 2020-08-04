@@ -1,0 +1,24 @@
+.header-navbar {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.nav-item a {
+  padding: 30px 20px;
+  transition: all 0.4s ease-in-out
+}
+
+.nav-item a:hover {
+  background-color: #56ac64;
+}
