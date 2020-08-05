@@ -1,0 +1,22 @@
+.career-nav li{
+    padding: 20px 30px;
+    transition: all 0.4s ease-in-out;
+    background-color: #d8d8d896;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.career-nav li:hover {
+    color: #04b1b9;
+}
+
+.career-nav .active {
+    background-color: #04b1b9 !important;
+    color: #ffffff !important;
+}
+
+.tab-content {
+    width: 100%;
+    margin: 20px 0;
+}

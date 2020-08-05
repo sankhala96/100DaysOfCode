@@ -1,21 +1,22 @@
-.header-navbar {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-}
-
 #navbarSupportedContent {
   justify-content: flex-end;
 }
 
+.navbar {
+  background-color: rgb(0 0 0 / 80%);
+  border-bottom: 1px solid rgb(243 76 39 / 48%);
+  height: 70px;
+}
+
 .nav-item {
-  color: #222222;
-  font-size: 16px;
-  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
   cursor: pointer;
   
 }
 
 .nav-item a {
-  padding: 30px 20px;
+  padding: 20px 20px;
   transition: all 0.4s ease-in-out
 }
 

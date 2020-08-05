@@ -1,19 +1,20 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 import "./App.css";
 
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import About from './components/About/About';
 
 const navbar = () => {
   return (
       <div className="header-navbar">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div className="container">
-        <a class="navbar-brand" href="#">
+        <a className="navbar-brand" href="#">
           Navbar
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -21,18 +22,17 @@ const navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link
                 activeClass="active"
                 className="Home"
                 to="Home"
                 spy={true}
-                hashSpy={true}
                 duration={500}
                 smooth={true}
               >
@@ -45,7 +45,6 @@ const navbar = () => {
                 className="About"
                 to="About"
                 spy={true}
-                hashSpy={true}
                 duration={500}
                 smooth={true}
               >
@@ -58,7 +57,6 @@ const navbar = () => {
                 className="Interest"
                 to="Interest"
                 spy={true}
-                hashSpy={true}
                 duration={500}
                 smooth={true}
               >
@@ -71,7 +69,6 @@ const navbar = () => {
                 className="Contact"
                 to="Contact"
                 spy={true}
-                hashSpy={true}
                 spy={true}
                 duration={500}
                 smooth={true}
@@ -92,7 +89,12 @@ function App() {
   return (
     <div>
       {navbar()}
-      <Home />
+      <Element name="Home">
+        <Home />
+      </Element>
+      <Element name="About">
+        <About />
+      </Element>
     </div>
   )
 }
