@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Element } from "react-scroll";
 import "./App.css";
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
 
-const navbar = () => {
+const Navbar = (props) => {
   return (
       <div className="header-navbar">
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <nav className={`navbar fixed-top navbar-expand-lg navbar-dark ${props.scroll ? 'scrolling-navbar' : ''}`}>
         <div className="container">
         <a className="navbar-brand" href="#">
           Navbar
@@ -86,9 +86,20 @@ const navbar = () => {
 };
 
 function App() {
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY > 600
+      console.log( window.scrollY)
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck)
+      }
+    })
+  })
   return (
     <div>
-      {navbar()}
+      <Navbar scroll={scroll} />
       <Element name="Home">
         <Home />
       </Element>
