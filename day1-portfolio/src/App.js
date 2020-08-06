@@ -4,6 +4,7 @@ import "./App.css";
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 const Navbar = (props) => {
   return (
@@ -106,6 +107,7 @@ function App() {
       <Element name="About">
         <About />
       </Element>
+      <Footer />
     </div>
   )
 }
