@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import "./Career.css";
 
 function Career() {
@@ -10,26 +10,38 @@ function Career() {
         <FontAwesomeIcon icon={faPaperPlane} />
       </div>
       <div className="career-tab-content">
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>Impetus Technologies</h3>
-            <span>Software Engineer</span>
-            <p>
-              This Job is all about creating optimised JavaScript application.
-            </p>
+          <div id="timeline">
+            <div className="timeline-item">
+              <div className="timeline-icon">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </div>
+              <div className="timeline-content">
+                <img src={require("./Impetus_logo.PNG")} />
+                <span>Software Engineer (2019-Present)</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Atque, facilis quo maiores magnam modi ab libero praesentium
+                  blanditiis.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </div>
+              <div className="timeline-content right">
+                <img src={require("./Impetus_logo.PNG")} />
+                <span>Associate Software Engineer (2018-2019)</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Atque, facilis quo. Maiores magnam modi ab libero praesentium
+                  blanditiis consequatur aspernatur accusantium maxime molestiae
+                  sunt ipsa.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="timeline-block timeline-block-left">
-        <div className="marker"></div>
-        <div className="timeline-content">
-          <h3>Impetus Technologies</h3>
-          <span>Associate Software Engineer</span>
-          <p>
-            This Job is all about creating optimised JavaScript application
-          </p>
-        </div>
-      </div>
       </div>
     </div>
   );

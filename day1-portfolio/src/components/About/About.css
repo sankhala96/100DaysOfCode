@@ -46,6 +46,11 @@
     overflow: hidden;
 }
 
+.about-picture img {
+    max-width: 100%;
+    height: 100%;
+}
+
 .about-picture img:hover {
     transform: scale(1.1);
 }
