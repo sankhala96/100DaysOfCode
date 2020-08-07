@@ -1,33 +1,40 @@
-import React from "react";
-import { Doughnut } from "react-chartjs-2";
+import React, { useEffect, useState } from "react";
 import "./Skills.css";
 
-const data = {
-  labels: ["Red", "Green"],
-  datasets: [
-    {
-      data: [300, 50],
-      backgroundColor: ["#FF6384", "#36A2EB"],
-      hoverBackgroundColor: ["#FF6384", "#36A2EB"],
-    },
-  ],
-};
+const hue="183";
+const saturation="95";
+const SKILLS = [
+  {type: "JavaScript", level: 80},
+  {type: "React JS", level: 80},
+  {type: "Node JS", level: 70},
+  {type: "HTML", level: 60},
+  {type: "CSS", level: 60},
+  {type: "Mongodb", level: 50},
+];
 
 function Skills() {
+  const [collapsed, changeCollapsed] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      changeCollapsed(false);
+    }, 500);
+  })
+
   return (
-    <div className="container">
-      <div>
-        <div class="donut-chart chart4">
-          <div class="quad one"></div>
-          <div class="quad two"></div>
-          <div class="quad three"></div>
-          <div class="quad four"></div>
-          <div class="quad top"></div>
-          <div class="chart-center"></div>
-        </div>
-      </div>
+    <div className={`container ${collapsed ? 'collapsed' : ''}`}>
+      <ul className="skills">
+          {SKILLS.map((skill, index) => 
+            <li
+              key={skill.type}
+              style={{ width: `${skill.level}%`, backgroundColor: `hsl(${hue}, ${saturation}%, ${100 / (index + 3.5) }%)` }}
+            >
+              <p>{skill.type}<span>{skill.level}</span></p>
+            </li>
+          )}
+        </ul>
     </div>
-  );
+  )
 }
 
 export default Skills;

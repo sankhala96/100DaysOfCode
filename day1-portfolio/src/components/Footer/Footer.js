@@ -29,6 +29,9 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div className="footer-bottom">
+                        © Yash Sankhala. All rights reserved.
+                    </div>
             </div>
         </footer>
     )

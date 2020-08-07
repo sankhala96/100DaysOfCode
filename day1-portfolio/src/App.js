@@ -5,28 +5,25 @@ import "./App.css";
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Interest from './components/Interest/Interest';
 
 const Navbar = (props) => {
+  const [show, toggleMenu] = useState(false);
   return (
       <div className="header-navbar">
         <nav className={`navbar fixed-top navbar-expand-lg navbar-dark ${props.scroll ? 'scrolling-navbar' : ''}`}>
         <div className="container">
         <a className="navbar-brand" href="#">
-          Navbar
         </a>
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={()=>toggleMenu(!show)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className={`collapse navbar-collapse ${show ? 'show' : ''}`} id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
@@ -107,7 +104,12 @@ function App() {
       <Element name="About">
         <About />
       </Element>
-      <Footer />
+      <Element name="Interest">
+        <Interest />
+      </Element>
+      <Element name="Contact">
+        <Footer />
+      </Element>
     </div>
   )
 }

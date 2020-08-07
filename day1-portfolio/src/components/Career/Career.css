@@ -133,6 +133,10 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .career-tab {
+    align-items: flex-start;
+  }
+
   #timeline {
     margin: 30px;
     padding: 0px;

@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: #232323 !important;
     border-radius: 0 !important;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .footer-top {
@@ -32,4 +32,11 @@
 
 .contact-info-list svg{
     margin: 0 15px 0 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
 }
