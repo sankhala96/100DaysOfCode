@@ -20,9 +20,9 @@ function Home() {
             />
           </h1>
           <ul className="home-banner-social-list">
-            <li><FontAwesomeIcon icon={faLinkedin} /></li>
-            <li><FontAwesomeIcon icon={faGithub} /></li>
-            <li><FontAwesomeIcon icon={faInstagram} /></li>
+            <li><a href="https://www.linkedin.com/in/yash-sankhala-5a26b113a/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            <li><a href="https://github.com/sankhala96"><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href="https://www.instagram.com/sankhala__/"><FontAwesomeIcon icon={faInstagram} /></a></li>
           </ul>
           </div>
         </div>

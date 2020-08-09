@@ -16,12 +16,12 @@ function Career() {
                 <FontAwesomeIcon icon={faCalendarAlt} />
               </div>
               <div className="timeline-content">
-                <img src={require("./Impetus_logo.PNG")} />
+                <img alt="logo" src={process.env.PUBLIC_URL + "/Impetus_logo.PNG"} />
                 <span>Software Engineer (2019-Present)</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Atque, facilis quo maiores magnam modi ab libero praesentium
-                  blanditiis.
+                  This job is all about creating fast and reusable UI components.
+                  Most of the task include working with different UI framworks.
+                  Majorly working with React JS and Node JS
                 </p>
               </div>
             </div>
@@ -31,13 +31,12 @@ function Career() {
                 <FontAwesomeIcon icon={faCalendarAlt} />
               </div>
               <div className="timeline-content right">
-                <img src={require("./Impetus_logo.PNG")} />
+                <img alt="logo" src={process.env.PUBLIC_URL + "/Impetus_logo.PNG"} />
                 <span>Associate Software Engineer (2018-2019)</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Atque, facilis quo. Maiores magnam modi ab libero praesentium
-                  blanditiis consequatur aspernatur accusantium maxime molestiae
-                  sunt ipsa.
+                  This job is all about creating fast and reusable UI components.
+                  Most of the task include working with different UI framworks.
+                  Majorly working with React JS and Node JS
                 </p>
               </div>
             </div>

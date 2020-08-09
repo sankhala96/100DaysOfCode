@@ -19,9 +19,9 @@ function Education() {
                   <h4>Bachelor's Degree (2014-2018)</h4>
                 <span>Acropolis Institute of Technology and Research</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Atque, facilis quo maiores magnam modi ab libero praesentium
-                  blanditiis.
+                  Joined the Institute as a undergraduate degree in Computer Science.
+                  Got to learn different asspects of engineering during this period.
+                  Graduated with 7.2 GPA in year 2018.
                 </p>
               </div>
             </div>
@@ -34,10 +34,7 @@ function Education() {
                 <h4>School Education (2000-2014)</h4>
                 <span>Dashpur Vidhyalaya</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Atque, facilis quo. Maiores magnam modi ab libero praesentium
-                  blanditiis consequatur aspernatur accusantium maxime molestiae
-                  sunt ipsa.
+                  Graduated in year 2014 with Science and Maths as major.
                 </p>
               </div>
             </div>

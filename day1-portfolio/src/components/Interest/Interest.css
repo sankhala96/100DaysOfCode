@@ -11,6 +11,7 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background: url('/interest-banner-img.jpg');
 }
 
 .interest-header-title {
@@ -31,10 +32,12 @@
 
 .card-wrap-box {
     display: flex;
+    justify-content: space-between;
 }
 
 .card-wrap {
     padding: 20px;
+    width: 33%;
 }
 
 .card-icon {
@@ -59,8 +62,16 @@
     padding: 30px;
 }
 
+.card-contenet h3 {
+    text-align: center;
+}
+
 @media (max-width: 700px) {
     .card-wrap-box {
         flex-direction: column;
+    }
+
+    .card-wrap {
+        width: 100%;
     }
 }

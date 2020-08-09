@@ -67,7 +67,6 @@ const Navbar = (props) => {
                 className="Contact"
                 to="Contact"
                 spy={true}
-                spy={true}
                 duration={500}
                 smooth={true}
               >
@@ -89,7 +88,6 @@ function App() {
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 600
-      console.log( window.scrollY)
       if (scrollCheck !== scroll) {
         setScroll(scrollCheck)
       }

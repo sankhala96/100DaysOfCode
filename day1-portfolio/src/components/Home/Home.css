@@ -38,6 +38,14 @@
     padding-right: 10px;
 }
 
+.home-banner-social-list li a {
+    color: #fff;
+}
+
+.home-banner-social-list li a:hover{
+    color: #04b1b9;
+}
+
 .home-banner-social-list svg {
     width: 30px !important;
     height: 30px;
