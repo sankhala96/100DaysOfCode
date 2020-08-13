@@ -2,8 +2,12 @@
   position: absolute;
   bottom: 0px;
   display: flex;
+  align-items: baseline;
+  margin: 0 60px;
 }
 
 .bar {
-  padding: 0 2px;
+  padding: 0 4px;
+  background-color: #04b1b9;
+  margin-right: 2px;
 }

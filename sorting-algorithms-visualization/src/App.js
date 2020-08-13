@@ -17,7 +17,7 @@ class App extends React.Component {
 
   randomNoGenerator = () => {
     const arr = [];
-    for(let i=1; i<=200; i++) {
+    for(let i=1; i<=150; i++) {
       const no = Math.random() * (300 - 5) + 5;
       arr.push(Math.floor(no));
     }
@@ -29,7 +29,7 @@ class App extends React.Component {
 
   createBars = () => {
     const bars = this.state.array.map(no => {
-      return <div className="bar" style={{ height: `${no}px` }}>{no}</div>
+      return <span className="bar" style={{ height: `${no}px` }}></span>
     })
 
     return bars;
