@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import bubbleSortAlgo from './bubbleSortAlgo';
 
 class App extends React.Component {
 
@@ -13,6 +14,14 @@ class App extends React.Component {
 
   componentDidMount() {
     this.randomNoGenerator();
+  }
+
+  bubbleSort = () => {
+    const sortedArray = bubbleSortAlgo(this.state.array);
+
+    this.setState({
+      array: sortedArray
+    })
   }
 
   randomNoGenerator = () => {
@@ -38,7 +47,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.createBars()}
+        <div className="button-tool-bar">
+          <button onClick={this.bubbleSort}>Bubble Sort</button>
+          <button>Merge Sort</button>
+          <button>Quick Sort</button>
+        </div>
+        <div className="bar-container">
+          {this.createBars()}
+        </div>
       </div>
     )
   }
