@@ -1,0 +1,49 @@
+.App {
+  background-color: #282c34;
+  height: 100vh;
+  padding: 100px;
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #686e79d9;
+  background-color: #3f4c65d9;
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+  float: left;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.game-info button {
+  cursor: pointer;
+  width: 15%;
+  margin-top: 10px;
+  background-color: #57eabbd6;
+  border: 1px solid #57eabbd6;
+}
